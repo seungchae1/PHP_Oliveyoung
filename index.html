@@ -7,6 +7,10 @@
     <title>Document</title>
 </head>
 <style>
+  body{
+    padding: 0;
+    margin: 0;
+  }
   header>div{
     display: inline-block;
   }
@@ -15,19 +19,25 @@
     border-radius: 25px;
     border: 2px solid #9bce26;
     font-size: 10px;
-    width: 290px;
-    height: 32px;
+    width: 314px;
+    height: 35px;
     position: absolute;
   }
   .search-btn{
-    left: 270px;
-    top: 6px;
+    left: 293px;
+    top: 8px;
     position:relative;
   }
   ul{ 
     margin: 0;
     padding: 0;
     list-style: none;
+  }
+  .header-inner{
+    margin-left: 260px;
+  }
+  .brand{
+    margin-right: 88px;
   }
   .header-top>ul>li{
     display: inline;
@@ -39,7 +49,8 @@
     float: left;
   }
   .inner-ul{
-    margin-left: 500px;
+    margin-top: 10px;
+    margin-left: 350px;
   }
   .nav-item{
     line-height: 44px;
@@ -61,6 +72,7 @@
     padding: 0px;
     display: block;
     text-align: left;
+    background-color: white;
   }
   a{
     text-decoration: none;
@@ -73,61 +85,135 @@
     margin-left: 15px;
     float: left;
   }
+  .menu{
+    font-size: 15px; 
+  }
   .menu-item-ul>li{
     font-size: 13px;
   }
   #menu-title{
+    padding: 0;
+    margin-left: 260px;
     width: 170px;
     height: 44px;
-    border-left: 1px solid gray;
-    border-right: 1px solid gray;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
   }
-  hr{
+  .nav-pills{
+    border-top: 1px solid #ddd;
+  }
+  .header-top{
+    float: right;
+    font-size: 12px;
+    margin-right: 230px;
+  }
+  .header-top>ul>li{
+    width:100px;
+  }
+  .imgview{
+    height: 450px;
+    width:100%;
+    overflow: hidden;
+  }
+  .imgview>img{
+    padding: 0;
     margin: 0;
+    border-top: 2px solid black;
+    margin-left: -200px;
+  }
+  .menu-p{
+    font-weight: bold;
+    font-size: 14px;
+    height: 12px;
+    color: black;
+  }
+  .menu-item-ul>li{
+    font-weight: bold;
+    color: rgb(106, 106, 106);
+    height: 25px;
+  }
+  .menu-item-ul{
+    margin-bottom: 20px;
+  }
+  .menu-ver{
+    padding-left: 20px;
+    width: 140px;
+  }
+  .menu-head{
+    font-weight: bold;
+    margin-left: 20px;
+    padding-left: 20px;
+    height: 50px;
+    width: 470px;
+    border-bottom: 1px solid #ddd;
+  }
+  .beauty{
+    width: 53%;
+    height: 900px;
+    border-right: 1px solid #ddd;
+  }
+  .header-top-ul>li{
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .inner-ul>li{
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+    text-align: center;
+  }
+  .center{
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
   }
 </style>
 <body>
   <header class="header-all-wrap">
     <div class="header-top">
-      <ul>
+      <ul class="header-top-ul">
         <li>회원가입</li>
-        <li>로그인</li>
+        <li class="center">로그인</li>
         <li>장바구니</li>
-        <li>주문배송</li>
+        <li class="center">주문배송</li>
         <li>고객센터</li>
-        <li>매장안내</li>
+        <li class="center">매장안내</li>
         <li>Global</li>
       </ul>
     </div>
-    <p></p>
+    <p style="height:20px;"></p>
     <div class="header-inner">
       <a class="brand">
-        <img src="img/logo.png" alt="" width="235" height="42">
+        <img src="img/logo.png" alt="" width="248" height="42px">
       </a>
-      <input type="text" class="search-txt" name="" placeholder="서울라이트PICK 필로소피💖">
-      <i class="search-btn" ><img src="img/search_icon.PNG" width="27px"></i>
+      <div id="search_box">
+        <input type="text" class="search-txt"name="search-txt" placeholder="서울라이트PICK 필로소피💖">
+        <i class="search-btn" ><img src="img/search_icon.PNG" width="27px"></i>
+      </div>
       <ul class="inner-ul">
-        <li>오늘드림</li>
-        <li>관심 매장소식</li>
-        <li>최근 본 상품</li>
+        <li>오늘드림<img src="./img/thunder_icon.PNG" width="30px"></li>
+        <li class="center">관심 매장소식<img src="./img/pointer_icon.PNG" width="20px"></li>
+        <li>최근 본 상품<img src="./img/pointer_icon.PNG" width="20px"></li>
       </ul>
     </div>
     <p></p>
-    <hr>
-    <ul class="nav nav-pills">
+    <ul class="nav-pills">
         <li class="nav-item" id="menu-title">
-          <div class="dropdown"onclick="DropOnclick()">
+          <div class="dropdown">
+            <div onclick="DropOnclick()">
             <a class="menu" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
               카테고리
             </a>
-          
+          </div>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink" id="dropdown-mn">
               <li>
-                <div>
+                <div class="beauty">
                   <ul class="menu-ul">
-                    <div>
+                    <li class="menu-head">
+                      뷰티
+                    </li>
+                    <div class="menu-ver">
                     <li>
-                      <a class="dropdown-item" href="#"><p>스킨케어</p></a>
+                      <a class="dropdown-item" href="#"><p class="menu-p">스킨케어 > </p></a>
                       <ul class="menu-item-ul">
                         <li>스킨/로션/올인원</li>
                         <li>에센스/크림</li>
@@ -135,7 +221,7 @@
                       </ul>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#"><p>마스크팩</p></a>
+                      <a class="dropdown-item" href="#"><p class="menu-p">마스크팩 > </p></a>
                       <ul class="menu-item-ul">
                         <li>시트팩/패드</li>
                         <li>페이셜팩</li>
@@ -143,7 +229,7 @@
                       </ul>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#"><p>클렌징</p></a>
+                      <a class="dropdown-item" href="#"><p class="menu-p">클렌징 > </p></a>
                       <ul class="menu-item-ul">
                         <li>클렌징폼/젤</li>
                         <li>오일/워터/리무버</li>
@@ -151,16 +237,16 @@
                       </ul>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#"><p>선케어</p></a>
+                      <a class="dropdown-item" href="#"><p class="menu-p">선케어 > </p></a>
                       <ul class="menu-item-ul">
                         <li>선블록</li>
                         <li>태닝/애프터선</li>
                       </ul>
                     </li>
                     </div>
-                    <div>
+                    <div class="menu-ver">
                     <li>
-                      <a class="dropdown-item" href="#"><p>더모 코스메틱</p></a>
+                      <a class="dropdown-item" href="#"><p class="menu-p">더모 코스메틱 > </p></a>
                       <ul class="menu-item-ul">
                         <li>스킨/로션</li>
                         <li>에센스/크림</li>
@@ -172,7 +258,7 @@
                       </ul>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#"><p>메이크업</p></a>
+                      <a class="dropdown-item" href="#"><p class="menu-p">메이크업 > </p></a>
                       <ul class="menu-item-ul">
                         <li>립메이크업</li>
                         <li>베이스메이크업</li>
@@ -180,7 +266,7 @@
                       </ul>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#"><p>네일</p></a>
+                      <a class="dropdown-item" href="#"><p class="menu-p">네일 > </p></a>
                       <ul class="menu-item-ul">
                         <li>폴리쉬</li>
                         <li>팁/스티커</li>
@@ -188,10 +274,8 @@
                         <li>케어</li>
                       </ul>
                     </li>
-                  </div>
-                  <div>
                     <li>
-                      <a class="dropdown-item" href="#"><p>바디케어</p></a>
+                      <a class="dropdown-item" href="#"><p class="menu-p">바디케어 > </p></a>
                       <ul class="menu-item-ul">
                         <li>워시/스크럽</li>
                         <li>로션/오일</li>
@@ -204,8 +288,10 @@
                         <li>선물세트</li>
                       </ul>
                     </li>
+                  </div>
+                  <div class="menu-ver">
                     <li>
-                      <a class="dropdown-item" href="#"><p>헤어케어</p></a>
+                      <a class="dropdown-item" href="#"><p class="menu-p">헤어케어 > </p></a>
                       <ul class="menu-item-ul">
                         <li>샴푸/린스</li>
                         <li>트리트먼트/팩</li>
@@ -218,7 +304,7 @@
                       </ul>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#"><p>향수/디퓨저</p></a>
+                      <a class="dropdown-item" href="#"><p class="menu-p">향수/디퓨저 > </p></a>
                       <ul class="menu-item-ul">
                         <li>여성향수</li>
                         <li>남성향수</li>
@@ -226,7 +312,7 @@
                       </ul>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#"><p>미용소품</p></a>
+                      <a class="dropdown-item" href="#"><p class="menu-p">미용소품 > </p></a>
                       <ul class="menu-item-ul">
                         <li>페이스</li>
                         <li>아이</li>
@@ -238,7 +324,7 @@
                       </ul>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#"><p>남성</p></a>
+                      <a class="dropdown-item" href="#"><p class="menu-p">남성 > </p></a>
                       <ul class="menu-item-ul">
                         <li>스킨케어</li>
                         <li>바디케어</li>
@@ -288,11 +374,15 @@
         </li>
     </ul>
 </header>
+<div class="imgview">
+  <img src="./img/slide_img1.jpg">
+</div>
 <script>
-  let cnt=0;
+  let cnt_m=0;
+  let cnt_s=0;
   function DropOnclick(){
-    cnt++;
-    if(cnt%2==0){
+    cnt_m++;
+    if(cnt_m%2==0){
       document.getElementById("dropdown-mn").style.width="0px";
       document.getElementById("dropdown-mn").style.height="0px";
       document.getElementById("dropdown-mn").style.border="none";
@@ -300,8 +390,8 @@
       document.getElementById("dropdownMenuLink").style.color="black";
     }
     else{
-      document.getElementById("dropdown-mn").style.width="800px";
-      document.getElementById("dropdown-mn").style.height="700px";
+      document.getElementById("dropdown-mn").style.width="1000px";
+      document.getElementById("dropdown-mn").style.height="900px";
       document.getElementById("dropdown-mn").style.border="3px solid black";
       document.getElementById("menu-title").style.background="black";
       document.getElementById("dropdownMenuLink").style.color="white";
