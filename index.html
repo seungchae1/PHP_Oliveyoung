@@ -6,167 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<style>
-  body{
-    padding: 0;
-    margin: 0;
-  }
-  header>div{
-    display: inline-block;
-  }
-  .search-txt{
-    padding-left: 20px;
-    border-radius: 25px;
-    border: 2px solid #9bce26;
-    font-size: 10px;
-    width: 314px;
-    height: 35px;
-    position: absolute;
-  }
-  .search-btn{
-    left: 293px;
-    top: 8px;
-    position:relative;
-  }
-  ul{ 
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  .header-inner{
-    margin-left: 260px;
-  }
-  .brand{
-    margin-right: 88px;
-  }
-  .header-top>ul>li{
-    display: inline;
-  }
-  .header-inner>ul>li{
-    display: inline;
-  }
-  .header-inner>*{
-    float: left;
-  }
-  .inner-ul{
-    margin-top: 10px;
-    margin-left: 350px;
-  }
-  .nav-item{
-    line-height: 44px;
-    text-align: center;
-    float: left;
-    height: 44px;
-    width: 100px;
-  }
-  .dropdown{
-    position: relative;
-  }
-  .dropdown-menu{
-    top: 44px;
-    height: 0px;
-    width: 0px;
-    overflow: hidden;
-    display: none;
-    position: absolute;
-    padding: 0px;
-    display: block;
-    text-align: left;
-    background-color: white;
-  }
-  a{
-    text-decoration: none;
-  }
-  .nav-link:hover{
-    color: #f27370;
-    border-bottom: 2px solid #f27370;
-  }
-  .menu-ul>div{
-    margin-left: 15px;
-    float: left;
-  }
-  .menu{
-    font-size: 15px; 
-  }
-  .menu-item-ul>li{
-    font-size: 13px;
-  }
-  #menu-title{
-    padding: 0;
-    margin-left: 260px;
-    width: 170px;
-    height: 44px;
-    border-left: 1px solid #ddd;
-    border-right: 1px solid #ddd;
-  }
-  .nav-pills{
-    border-top: 1px solid #ddd;
-  }
-  .header-top{
-    float: right;
-    font-size: 12px;
-    margin-right: 230px;
-  }
-  .header-top>ul>li{
-    width:100px;
-  }
-  .imgview{
-    height: 450px;
-    width:100%;
-    overflow: hidden;
-  }
-  .imgview>img{
-    padding: 0;
-    margin: 0;
-    border-top: 2px solid black;
-    margin-left: -200px;
-  }
-  .menu-p{
-    font-weight: bold;
-    font-size: 14px;
-    height: 12px;
-    color: black;
-  }
-  .menu-item-ul>li{
-    font-weight: bold;
-    color: rgb(106, 106, 106);
-    height: 25px;
-  }
-  .menu-item-ul{
-    margin-bottom: 20px;
-  }
-  .menu-ver{
-    padding-left: 20px;
-    width: 140px;
-  }
-  .menu-head{
-    font-weight: bold;
-    margin-left: 20px;
-    padding-left: 20px;
-    height: 50px;
-    width: 470px;
-    border-bottom: 1px solid #ddd;
-  }
-  .beauty{
-    width: 53%;
-    height: 900px;
-    border-right: 1px solid #ddd;
-  }
-  .header-top-ul>li{
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-  .inner-ul>li{
-    padding-left: 10px;
-    padding-right: 10px;
-    font-size: 14px;
-    text-align: center;
-  }
-  .center{
-    border-right: 1px solid #ddd;
-    border-left: 1px solid #ddd;
-  }
-</style>
+<link rel="stylesheet" href="./main.css">
 <body>
   <header class="header-all-wrap">
     <div class="header-top">
@@ -183,17 +23,16 @@
     <p style="height:20px;"></p>
     <div class="header-inner">
       <a class="brand">
-        <img src="img/logo.png" alt="" width="248" height="42px">
+        <img src="img/logo.png" alt="" width="248" height="42px" href="#">
       </a>
-      <div id="search_box">
         <input type="text" class="search-txt"name="search-txt" placeholder="서울라이트PICK 필로소피💖">
         <i class="search-btn" ><img src="img/search_icon.PNG" width="27px"></i>
-      </div>
-      <ul class="inner-ul">
-        <li>오늘드림<img src="./img/thunder_icon.PNG" width="30px"></li>
-        <li class="center">관심 매장소식<img src="./img/pointer_icon.PNG" width="20px"></li>
-        <li>최근 본 상품<img src="./img/pointer_icon.PNG" width="20px"></li>
-      </ul>
+      
+        <ul class="inner-ul">
+          <li>오늘드림<img src="./img/thunder_icon.PNG" width="30px"></li>
+          <li class="center">관심 매장소식<img src="./img/pointer_icon.PNG" width="20px"></li>
+          <li>최근 본 상품<img src="./img/pointer_icon.PNG" width="20px"></li>
+        </ul>
     </div>
     <p></p>
     <ul class="nav-pills">
@@ -374,29 +213,148 @@
         </li>
     </ul>
 </header>
+<div>
+</div>
 <div class="imgview">
+  <ul class="img_menu" id="img_mn">
+    <li class="img_mn_li">기초화장품</li>
+    <li class="img_mn_li">더모 코스메틱</li>
+    <li class="img_mn_li">메이크업·네일</li>
+    <li class="img_mn_li">바디케어</li>
+    <li class="img_mn_li">헤어케어</li>
+    <li class="img_mn_li">향수/디퓨저</li>
+    <li class="img_mn_li">미용소품</li>
+    <li class="img_mn_li">남성</li>
+    <li class="img_mn_li">건강/위생용품</li>
+    <li class="img_mn_li">건강식품</li>
+    <li class="img_mn_li">푸드</li>
+    <li class="img_mn_li">라이프/홈</li>
+    <li class="img_mn_li">반려동물</li>
+    <li class="img_mn_li">베이비</li>
+    <li class="awards">🏆AWARDS</li>
+  </ul>
   <img src="./img/slide_img1.jpg">
 </div>
-<script>
-  let cnt_m=0;
-  let cnt_s=0;
-  function DropOnclick(){
-    cnt_m++;
+<div class="content_wrap">
+  <img src="./img/ad.jpg" width="100%" class="ad_img">
+  <div class="recm_wrap">
+    <div class="half" id="border_point">
+      <div class="text_div">유사한 고객님이<br>많이 구매했어요
+        <button class="more">더보기 ></button>
+      </div>
+      <div class="img_wrap">
+        <img src="./img/img1_1.jpg" width="100%">
+        <div class="g_name"><br>[한정기획] 투쿨포스쿨 바이로댕<br>쉐딩 (브러쉬 증정기획)</div>
+        <p class="money_div">
+          <span class="f_money"><span class="f_money_num">16,000</span>원~</span> <span class="n_money"><span class="n_money_num">12,800</span>원~</span>
+          <img src="./img/bag_icon.PNG" width="10%" class="bag_icon">
+        </p>
+        <button class="sale_icon">세일</button>
+        <button class="today_icon">오늘드림</button>
+      </div>
+      <div class="img_wrap">
+        <img src="./img/img1_2.jpg" width="100%">
+        <div class="g_name"><br>컬러그램 올인원 애교살 메이커</div>
+        <p class="money_div">
+          <span class="f_money"><span class="f_money_num">9,800</span>원~</span> <span class="n_money"><span class="n_money_num">7,900</span>원~</span>
+          <img src="./img/bag_icon.PNG" width="10%" class="bag_icon">
+        </p>
+        <button class="sale_icon">세일</button>
+        <button class="today_icon">오늘드림</button>
+      </div>
+      <div class="other_recm">다른상품 추천해드릴게요<ul><li id="border_point">1</li><li class="recm_cnt">5</li></ul></div>
+    </div>
+    <div class="half">
+      <div class="text_div">최근 본 상품과<br>연관 상품 추천해드려요
+        <button class="more">더보기 ></button>
+      </div>
+      <div class="img_wrap">
+        <img src="./img/img2_1.jpg" width="100%">
+        <div class="g_name"><br>[NEW] 데이지크 섀도우 팔레트 (1~13호 단품/ 브러쉬 기획)</div>
+        <p class="money_div">
+          <span class="f_money"><span class="f_money_num">34,000</span>원~</span> <span class="n_money"><span class="n_money_num">28,900</span>원~</span>
+          <img src="./img/bag_icon.PNG" width="10%" class="bag_icon">
+        </p>
+        <button class="sale_icon">세일</button>
+        <button class="coupon_icon">쿠폰</button>
+        <button class="present_icon">증정</button>
+        <button class="today_icon">오늘드림</button>
+      </div>
+      <div class="img_wrap">
+        <img src="./img/img2_2.jpg" width="100%">
+        <div class="g_name"><br>[New] 페리페라 잉크더에어리벨벳 New color 추가</div>
+        <p class="money_div">
+          <span class="f_money"><span class="f_money_num">9,000</span>원~</span> <span class="n_money"><span class="n_money_num">7,200</span>원~</span>
+          <img src="./img/bag_icon.PNG" width="10%" class="bag_icon">
+        </p>
+        <button class="sale_icon">세일</button>
+        <button class="today_icon">오늘드림</button>
+      </div>
+      <div class="other_recm">다른상품 추천해드릴게요<ul><li id="border_point">1</li><li class="recm_cnt">5</li></ul></div>
+    </div>
+  </div>
+  <div class="weekly">
+    <div class="text_title">Weekly Special</div>
+    <div class="half">
+      <img src="./img/img3_1.jpg" width="100%">
+    </div>
+    <div class="half">
+      <img src="./img/img3_2.jpg" width="100%">
+    </div>
+  </div>
+  <div class="popular">
+    <div class="text_title">인기 행사만 모았어요!</div>
+    <div class="half">
+      <img src="./img/img3_1.jpg" width="100%">
+    </div>
+    <div class="half">
+      <img src="./img/img3_2.jpg" width="100%">
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+let cnt_m=0;
+let cnt_s=0;
+var dropdown_mn=document.getElementById("dropdown-mn");
+var menu_title=document.getElementById("menu-title");
+var img_mn=document.getElementById("img_mn");
+function DropOnclick(){
+cnt_m++;
     if(cnt_m%2==0){
-      document.getElementById("dropdown-mn").style.width="0px";
-      document.getElementById("dropdown-mn").style.height="0px";
-      document.getElementById("dropdown-mn").style.border="none";
-      document.getElementById("menu-title").style.background="white";
+      dropdown_mn.style.width="0px";
+      dropdown_mn.style.height="0px";
+      dropdown_mn.style.border="none";
+      dropdown_mn.style.overflow= "none";
+      dropdown_mn.style.marginTop="0px";
+      menu_title.style.background="white";
       document.getElementById("dropdownMenuLink").style.color="black";
+      if (matchMedia("screen and (max-width: 1023px)").matches){
+        img_mn.style.width="14.2%";
+        img_mn.style.height="335px";
+      }
+      else{
+        img_mn.style.width="172px";
+        img_mn.style.height="433px";
+      }
     }
     else{
-      document.getElementById("dropdown-mn").style.width="1000px";
-      document.getElementById("dropdown-mn").style.height="900px";
-      document.getElementById("dropdown-mn").style.border="3px solid black";
-      document.getElementById("menu-title").style.background="black";
+      if (matchMedia("screen and (max-width: 1023px)").matches){
+        dropdown_mn.style.marginTop="4px";
+        dropdown_mn.style.width="500%";
+        dropdown_mn.style.height="500px";
+      } 
+      else if(matchMedia("screen and (min-width: 1024px)").matches){
+        dropdown_mn.style.width="1050px";
+        dropdown_mn.style.height="900px";
+      }
+      img_mn.style.width="0px";
+      img_mn.style.height="0px";
+      img_mn.style.overflow= "hidden";
+      dropdown_mn.style.border="3px solid black";
+      menu_title.style.background="black";
       document.getElementById("dropdownMenuLink").style.color="white";
     }
-  }
+}
 </script>
 </body>
 </html>

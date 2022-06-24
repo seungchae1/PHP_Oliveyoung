@@ -1,0 +1,425 @@
+body{
+    padding: 0;
+    margin: 0;
+    letter-spacing:-1px
+  }
+  header>div{
+    display: inline-block;
+  }
+  .search-txt{ /* 검색바 */
+    padding-left: 20px;
+    border-radius: 25px;
+    border: 2px solid #9bce26;
+    font-size: 10px;
+    width: 314px;
+    height: 35px;
+    position: absolute;
+  }
+  .search-btn{ /* 검색아이콘 */
+    left: 293px;
+    top: 8px;
+    position:relative;
+  }
+  ul{ 
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .header-inner{ /* 네비바 옆 마진 */
+    margin-left: 260px;
+  }
+  .brand{ /* 로고, 검색바 사이 마진 */
+    margin-right: 88px;
+  }
+  .header-top>ul>li{
+    display: inline;
+  }
+  .header-inner>ul>li{
+    display: inline;
+  }
+  .header-inner>*{
+    float: left;
+  }
+  .inner-ul{ 
+    margin-top: 10px;
+    margin-left: 350px;
+  }
+  .nav-item{ /* 각 메뉴 네비바*/
+    line-height: 44px;
+    text-align: center;
+    float: left;
+    height: 44px;
+    width: 95px;
+  }
+  .nav-link{
+    font-weight: 700;
+  }
+  .dropdown{
+    position: relative;
+  }
+  .dropdown-menu{ /* 숨겨지는 드롭다운 메뉴 */
+    top: 44px;
+    height: 0px;
+    width: 0px;
+    overflow: hidden;
+    display: none;
+    padding: 0px;
+    display: block;
+    text-align: left;
+    background-color: white;
+  }
+  a{
+    color: black;
+    text-decoration: none;
+  }
+  .nav-link:hover{
+    color: #f27370;
+    border-bottom: 2px solid #f27370;
+  }
+  .menu-ul>div{
+    margin-left: 15px;
+    float: left;
+  }
+  .menu{
+    font-size: 14px; 
+  }
+  .menu-item-ul>li{
+    font-size: 13px;
+  }
+  #menu-title{ /* 카테고리*/
+    cursor: pointer;
+    font-weight: 1000;
+    padding: 0;
+    margin-left: 260px;
+    width: 170px;
+    height: 44px;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+  }
+  .nav-pills{
+    border-top: 1px solid #ddd;
+  }
+  .header-top{ /*제일 위 회원가입, 로그인...*/
+    float: right;
+    font-size: 12px;
+    margin-right: 14%;
+  }
+  .header-top>ul>li{ /*제일 위 회원가입, 로그인...각 사이즈*/
+    width:100px;
+  }
+  .imgview{ /* 이미지뷰 사이즈 */
+    height: 450px;
+    width:100%;
+    overflow: hidden;
+  }
+  .imgview>img{ /* 이미지 보이는 부분 조절 */
+    padding: 0;
+    margin: 0;
+    border-top: 2px solid black;
+    margin-left: -200px;
+  }
+  .menu-p{ /* 카테고리 소제목 p태그*/
+    font-weight: bold;
+    font-size: 14px;
+    height: 12px;
+    color: black;
+  }
+  .menu-item-ul>li{ /* 카테고리 요소 */
+    font-weight: bold;
+    color: rgb(106, 106, 106);
+    height: 25px;
+  }
+  .menu-ver{ /* 카테고리 세로 분활 */
+    padding-left: 20px;
+    width: 140px;
+  }
+  .menu-head{ /* 카테고리 소제목 속성 */
+    font-weight: bold;
+    margin-left: 20px;
+    padding-left: 20px;
+    height: 50px;
+    width: 470px;
+    border-bottom: 1px solid #ddd;
+  }
+  .beauty{ /* 카테고리 뷰티*/
+    width: 53%;
+    height: 900px;
+    border-right: 1px solid #ddd;
+  }
+  .header-top-ul>li{ /* 회원가입 부분 각 여백 */
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .inner-ul>li{ /* 오늘드림 부분 */
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+    text-align: center;
+  }
+  .center{
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+  }
+  .img_menu{ /*검은 카테고리 전체 ul*/
+    background-color: rgba(51,51,51,.5);
+    width: 172px;
+    height: 433px;
+    margin-left: 260px;
+    position: absolute;
+    padding-top: 17px;
+  }
+  .img_menu>li{ /*검은 카테고리 각 li*/
+    color: white;
+    font-size: 14px;
+    font-weight: 1000;
+    padding: 0px 17px 0px 22px;
+  }
+  .img_mn_li{ /*검은 카테고리 awards 제외 li*/
+    height: 28.5px;
+    line-height: 28.5px;
+  }
+  .img_menu>li:hover{
+    background-color: rgb(48,48,48);
+  }
+  .awards{ /*검은 카테고리 awards*/
+    height: 33px;
+    line-height: 33px;
+    background-color: rgba(0,0,0,.2);
+  }
+  .content_wrap{
+    margin-top: 50px;
+    margin-left: 17%;
+    margin-right: 17%;
+  }
+  .half{
+    float: left;
+    width:49.8%;
+    height: 100%;
+  }
+  #border_point{
+    border-right: 1px solid #ddd;
+  }
+  .ad_img{
+    margin-bottom: 5%;
+  }
+  button{
+    background:none;
+    border: 0;
+    padding: 0;
+    box-shadow: none;
+    cursor: pointer;
+  }
+  .more{
+    margin-top: 2%;
+    float: right;
+    margin-right: 5%;
+    font-size: 14px;
+    color: #aaa;
+  }
+  .img_wrap{
+    margin-right: 3%;
+    margin-left: 3%;
+    width: 44%;
+    float: left;
+    margin-top: 8%;
+    margin-bottom: 8%;
+  }
+  .text_div{
+    margin-left: 5%;
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .g_name{
+    height: 45px;
+    font-size: 14px;
+  }
+  .f_money{
+    color: #a9a9a9;
+    text-decoration: line-through;
+    font-size: 12px;
+  }
+  .n_money{
+    font-size: 14px;
+    color: #e02020;
+  }
+  .f_money_num{
+    font-size: 14px;
+  }
+  .n_money_num{
+    font-size: 20px;
+  }
+  .bag_icon{
+    float: right;
+    margin-right: 2%;
+  }
+  .recm_wrap{
+    margin-bottom: 500px;
+  }
+  .sale_icon{
+    float: left;
+    width: 40px;
+    height: 18px;
+    font-size: 12px;
+    background-color: #f65c60;
+    color: white;
+    border-radius: 25px;
+  }
+  .today_icon{
+    float: left;
+    width: 60px;
+    height: 18px;
+    font-size: 12px;
+    background-color: #f374b7;
+    color: white;
+    border-radius: 25px; 
+  }
+  .coupon_icon{
+    float: left;
+    width: 40px;
+    height: 18px;
+    font-size: 12px;
+    background-color: #9bce26;
+    color: white;
+    border-radius: 25px;
+  }
+  .present_icon{
+    float: left;
+    width: 40px;
+    height: 18px;
+    font-size: 12px;
+    background-color: #6fcff7;
+    color: white;
+    border-radius: 25px;
+  }
+  .other_recm>ul>li{
+    display: inline;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .other_recm>ul{
+    display: inline;
+    margin-left: 10px;
+  }
+  .other_recm{
+    font-size: 14px;
+    float: left;
+    width: 335px;
+    height: 28px;
+    border: 1px solid #ddd;
+    margin-left: 15%;
+    padding-top: 9px;
+    text-align: center;
+  }
+  .recm_cnt{
+    color:#ddd;
+  }
+  .recm_wrap>.half{
+    margin-bottom: 10%;
+  }
+  .weekly>.half{
+    width: 48%;
+    margin : 1%;
+  }
+  .text_title{
+    font-size: 26px;
+    font-weight: 700;
+    text-align: center;
+    width: 30%;
+    margin-left: 35%;
+  }
+  /* 반응형 구현*/
+  @media (min-width:768px) and (max-width:1023px){
+    .brand>img{ /* 로고 사이즈 */
+        width: 190px;
+        height: 33px;
+    }
+    .header-top{ /*제일 위 회원가입, 로그인... */
+        margin-right: 40px;
+        font-size: 10px;
+    }
+    .header-inner{ /* 로고 왼쪽 마진*/
+        margin-left: 2%;
+        height: 40px;
+    }
+    .search-txt{ /* 검색바 */
+      width: 210px;
+      height: 27px;
+    }
+    .search-btn{ /* 검색아이콘 */
+      left: 24.3%;
+      top: 5.7px;
+    }
+    .search-btn>img{
+        width: 22px;
+    }
+    .inner-ul>li{ /* 오늘드림 부분 각 각 */
+      padding-left: 2px;
+      padding-right: 2px;
+      font-size: 11px;
+    }
+    .inner-ul>li>img{
+        width: 22px;
+    }
+    .inner-ul{ /* 오늘드림 부분 */
+        margin-top: 0;
+        margin-right: 2%;
+        float:right;
+    }
+    .nav-item{ /* 각 메뉴 네비바*/
+      font-size: 13px;
+      line-height: 40px;
+      text-align: center;
+      float: left;
+      height: 44px;
+      width: 9.5%;
+    }
+    .brand{ /* 로고 오른쪽 마진 */
+      margin-right: 3%;
+    }
+    #menu-title{ /* 카테고리*/
+      padding: 0;
+      margin-left: 0;
+      width: 14%;
+      border-left: 1px solid #ddd;
+      border-right: 1px solid #ddd;
+    }
+    .imgview{ /*이미지뷰*/
+      height: 350px;
+    }
+    .imgview>img{
+        height: 100%;
+        margin-left: -430px;
+    }
+    .dropdown-menu{
+        width: 300px;
+    } 
+    .menu{
+      font-size: 12px;
+    }
+    .img_menu{ /*검은 카테고리 전체 ul*/
+      width: 14.2%;
+      height: 335px;
+      margin-left: 0;
+      position: absolute;
+      padding-top: 15px;
+    }
+    .img_menu>li{ /*검은 카테고리 각 li*/
+      color: white;
+      font-size: 12.5px;
+      font-weight: 700;
+      padding: 0px 0px 1.5px 15px;
+    }
+    .img_mn_li{ /*검은 카테고리 awards 제외 li*/
+      height: 20.5px;
+      line-height: 20.5px;
+    }
+    .awards{ /*검은 카테고리 awards*/
+      height: 25.5px;
+      line-height: 25.5px;
+      background-color: rgba(0,0,0,.2);
+    }
+    .content_wrap{
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+  }
