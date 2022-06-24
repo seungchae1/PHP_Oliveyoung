@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <link rel="stylesheet" href="./main.css">
+<script src="main.js"></script>
 <body>
   <header class="header-all-wrap">
     <div class="header-top">
@@ -312,49 +313,5 @@
     </div>
   </div>
 </div>
-<script type="text/javascript">
-let cnt_m=0;
-let cnt_s=0;
-var dropdown_mn=document.getElementById("dropdown-mn");
-var menu_title=document.getElementById("menu-title");
-var img_mn=document.getElementById("img_mn");
-function DropOnclick(){
-cnt_m++;
-    if(cnt_m%2==0){
-      dropdown_mn.style.width="0px";
-      dropdown_mn.style.height="0px";
-      dropdown_mn.style.border="none";
-      dropdown_mn.style.overflow= "none";
-      dropdown_mn.style.marginTop="0px";
-      menu_title.style.background="white";
-      document.getElementById("dropdownMenuLink").style.color="black";
-      if (matchMedia("screen and (max-width: 1023px)").matches){
-        img_mn.style.width="14.2%";
-        img_mn.style.height="335px";
-      }
-      else{
-        img_mn.style.width="172px";
-        img_mn.style.height="433px";
-      }
-    }
-    else{
-      if (matchMedia("screen and (max-width: 1023px)").matches){
-        dropdown_mn.style.marginTop="4px";
-        dropdown_mn.style.width="500%";
-        dropdown_mn.style.height="500px";
-      } 
-      else if(matchMedia("screen and (min-width: 1024px)").matches){
-        dropdown_mn.style.width="1050px";
-        dropdown_mn.style.height="900px";
-      }
-      img_mn.style.width="0px";
-      img_mn.style.height="0px";
-      img_mn.style.overflow= "hidden";
-      dropdown_mn.style.border="3px solid black";
-      menu_title.style.background="black";
-      document.getElementById("dropdownMenuLink").style.color="white";
-    }
-}
-</script>
 </body>
 </html>
