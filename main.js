@@ -107,3 +107,9 @@ function Change_text(){
   else
     document.getElementById("text_img").style.color="black";
 }
+
+
+playAlert = setInterval(function() {
+  Slide_right();
+  Change_text();
+}, 4200);
