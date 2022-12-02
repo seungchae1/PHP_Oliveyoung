@@ -45,6 +45,10 @@ body{
     margin-top: 10px;
     margin-left: 350px;
   }
+  .category{
+    height: 44px;
+    border-bottom: 2px solid black;
+  }
   .nav-item{ /* 각 메뉴 네비바*/
     line-height: 44px;
     text-align: center;
@@ -589,6 +593,7 @@ body{
     border-top: 1px solid rgb(220, 220, 220);
     background-color: #f9f9f9;
   }
+
   /* 반응형 구현*/
   @media screen and (max-width:1023px){
     .brand>img{ /* 로고 사이즈 */
