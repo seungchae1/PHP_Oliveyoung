@@ -3,6 +3,10 @@ body{
     margin: 0;
     letter-spacing:-1px
   }
+  /* 이름 */
+  .user_name{
+    font-weight: bold;
+  }
   header>div{
     display: inline-block;
   }
@@ -180,6 +184,10 @@ body{
   .center{
     border-right: 1px solid #ddd;
     border-left: 1px solid #ddd;
+  }
+  .cart_cnt{
+    color: #e02020;
+    font-weight: bold;
   }
   .img_menu{ /*검은 카테고리 전체 ul*/
     background-color: rgba(51,51,51,.5);

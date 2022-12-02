@@ -12,9 +12,24 @@
   <header class="header-all-wrap">
     <div class="header-top">
       <ul class="header-top-ul">
-        <li><a href="join.html">회원가입</a></li>
-        <li class="center"><a href="login.html">로그인</a></li>
-        <li><a href="cart.html">장바구니</a></li>
+        <?php
+          include("conn_db.php");
+          if(!isset($_COOKIE['uid']) && !isset($_COOKIE['upass']))
+          echo'
+          <li><a href="join.php">회원가입</a></li>
+          <li class="center"><a href="login.php">로그인</a></li>
+          <li><a href="cart.php">장바구니</a></li>';
+          else{
+            $id = $_COOKIE['uid'];
+            $sel = mysqli_query($conn, "select name from olive_join where id='$id';");
+            $name = mysqli_fetch_row($sel)[0];
+            echo '
+            <li class="user_name">'.$name.' 고객님</li>
+            <li><a href="logout.php">로그아웃</a></li>
+            <li class="center"><a href="login.html">마이페이지</a></li>
+            <li><a href="cart.php">장바구니<span class="cart_cnt"> ( 0 )</span></a></li>';
+          }
+        ?>
         <li class="center">주문배송</li>
         <li>고객센터</li>
         <li class="center">매장안내</li>
@@ -312,7 +327,7 @@
     <div class="login_box">
         <h2 class="login_title">로그인</h2>
         <div class="login_mini_title">올리브영의 다양한 서비스와 혜택을 누리세요</div>
-        <from action="#" method="post">
+        <form method="post" action="login_result.php">
           <input type="text" name="id" id="uid" placeholder="아이디 입력" class="login_from"><br>
           <input type="password" name="pass" id="upass" placeholder="비밀번호 (8~12자 영문자+숫자+특수기호)" class="login_from"><p>
             <!--<label class="save_label"><input type="checkbox" name="saveId" class="saveId"></label> 아이디 저장<br>-->
