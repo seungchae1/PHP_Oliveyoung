@@ -12,7 +12,8 @@ else if($n ==0) echo "<script>alert('아이디나 비밀번호를 틀렸습니�
 else{
     setcookie("uid",$uid,time()+3600*24);
     setcookie("upass",$upass,time()+3600*24);
-    echo "<meta http-equiv='refresh' content='2;url=index.php'>";
+    if($uid=="test") echo "<meta http-equiv='refresh' content='2;url=Myindex.html'>";
+    else echo "<meta http-equiv='refresh' content='2;url=index.php'>";
 }
 mysqli_close($conn);
 ?>

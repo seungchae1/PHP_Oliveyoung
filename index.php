@@ -18,7 +18,7 @@
           echo'
           <li><a href="join.php">회원가입</a></li>
           <li class="center"><a href="login.php">로그인</a></li>
-          <li><a href="cart.php">장바구니</a></li>';
+          <li><a href="cart.html">장바구니</a></li>';
           else{
             $id = $_COOKIE['uid'];
             $sel = mysqli_query($conn, "select name from olive_join where id='$id';");
